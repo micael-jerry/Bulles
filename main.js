@@ -10,7 +10,8 @@ let bubbleMaker = () => {
     bubble.style.top = Math.random()*150+"%";
     bubble.style.left = Math.random()*100+"%";
 
-    bubble.style.setProperty('--left', Math.random()*100+"%");
+    const plusMinus = Math.random() > 0.5 ? 1 : -1;
+    bubble.style.setProperty('--left', Math.random()*100*plusMinus+"%");
 };
 
-setInterval(bubbleMaker,300)
+setInterval(bubbleMaker,1000)
