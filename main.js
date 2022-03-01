@@ -1,3 +1,7 @@
+let counterDisplay = document.querySelector('h3');
+let counter = 0 ;
+
+
 let bubbleMaker = () => {
     const bubble = document.createElement('span');
     bubble.classList.add('bubble')
@@ -14,7 +18,9 @@ let bubbleMaker = () => {
     bubble.style.setProperty('--left', Math.random()*100*plusMinus+"%");
 
     bubble.addEventListener('click', () => {
-        bubble.remove()
+        counter++ ;
+        counterDisplay.textContent = counter ;
+        bubble.remove() ;
     })
 
     setTimeout( () => {

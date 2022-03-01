@@ -19,3 +19,8 @@ body {
         filter: hue-rotate(720deg);
     }
 }
+h3 {
+    font-size: 10rem;
+    text-align: center;
+    color: rgba(190, 190, 194, 0.575);
+}
